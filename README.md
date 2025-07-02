@@ -42,7 +42,7 @@ CODE GENERATION:
 # ERD Diagram 
 
 Using Erdantic, we can generate an ER Diagram from the Pydantic models.
-Below is an example using the Divisions pydantic mode with the generated ERD 
+Below is an example using the Division pydantic model with the generated ERD 
 both as a Python object and as a rendered graph.
 
 ```
