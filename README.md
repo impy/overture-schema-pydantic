@@ -38,3 +38,25 @@ CODE GENERATION:
       parse the code.
     - From all the BaseModel and/or Feature derived classes, get their
       core schema from `__get_pydantic_core_schema__`.
+      
+# ERD Diagram 
+
+Using Erdantic, we can generate an ER Diagram from the Pydantic models.
+Below is an example using the Divisions pydantic mode with the generated ERD 
+both as a Python object and as a rendered graph.
+
+```
+EntityRelationshipDiagram(
+   models={
+      'overture_schema_pydantic.divisions.Division': ModelInfo(...),
+      'overture_schema_pydantic.names.Names': ModelInfo(...),
+      'overture_schema_pydantic.source.Source': ModelInfo(...)
+   },
+   edges={
+      'overture_schema_pydantic.divisions.Division-names-overture_schema_pydantic.names.Names': Edge(...),
+      'overture_schema_pydantic.divisions.Division-sources-overture_schema_pydantic.source.Source': Edge(...)
+   }
+)
+```
+
+![ERD Diagram generatd by Erdantic](/out/divisions.png)
