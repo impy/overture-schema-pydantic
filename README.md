@@ -59,4 +59,4 @@ EntityRelationshipDiagram(
 )
 ```
 
-![ERD Diagram generatd by Erdantic](/out/divisions.png)
+![ERD Diagram generatd by Erdantic](/out/division.png)
